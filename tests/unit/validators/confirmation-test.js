@@ -26,7 +26,7 @@ test('attribute', function(assert) {
     'email': 'foo@yahoo.com'
   });
 
-  set(validator, 'attribute', 'email');
+  set(validator, 'options.on', 'email');
   set(validator, 'model', model);
 
   message = validator.validate('bar@yahoo.com');
